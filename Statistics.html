@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>Moxi</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <link rel="stylesheet" href="Style.css" />
+    <script src="Script.js"></script>  
+	
+	
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <p class="logo text-left">
+                    <a class="site-logo" alt="Home" title="Home" href="Home.html">
+                            <span class="logo-text">Moxi</span>
+                    </a>             
+             </p>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="Statistics.html">STATISTICS</a></li>
+                <li><a>LOGIN</a></li>
+                <li><a>SIGNUP</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="jumbotron text-center">
+          <h1>Moxi</h1> 
+          <p>Display of the Stats</p> 
+        </div>
+        <br>
+        <div class="container-fluid text-center">
+        <h2>Select the Dealer</h2>
+        <select id="ddlViewBy">
+                <option selected disabled>Choose one</option>
+                <option value="cortlandcdj">cortlandcdj</option>
+                <option value="a">Dealer 2</option>
+                <option value="b">Dealer 3</option>
+                <option value="c">Dealer 4</option>
+        </select>
+        <button onclick="myFunction()">Get Stats</button>
+        <br><hr>
+        <div class="container-fluid text-center">
+                <h2>Stats</h2>
+                <h4>What we have delivered</h4>
+                <br>
+                  <div class="col-sm-4">
+                    <h4>Messages Sent:</h4>
+                    <p id="msgsent"></p>
+                  </div>
+                  <div class="col-sm-4">
+                    <h4>Approved Tasks:</h4>
+                    <p id="approvedtasks"></p>
+                  </div>
+                  <div class="col-sm-4">
+                    <h4>Mros Created:</h4>
+                    <p id="mros"></p>
+                  </div>
+                <br><br>
+        </div>
+        <br>
+        <hr>
+		<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+		<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>
